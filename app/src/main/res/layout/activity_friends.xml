@@ -1,0 +1,73 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fondo de pantalla -->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/fondo2"
+        android:scaleType="centerCrop"
+        android:contentDescription="Imagen de fondo"
+        android:alpha="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!-- Contenedor principal en ScrollView para permitir desplazamiento si es necesario -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/transparent">
+
+            <!-- Tarjeta de amigo 1 -->
+            <include layout="@layout/item_friend_simple"/>
+
+            <!-- Tarjeta de amigo 2 -->
+            <include layout="@layout/item_friend_simple"/>
+
+            <!-- Tarjeta de amigo 3 -->
+            <include layout="@layout/item_friend_simple"/>
+
+            <!-- Tarjeta de amigo 4 -->
+            <include layout="@layout/item_friend_simple"/>
+
+            <!-- Tarjeta de amigo 5 -->
+            <include layout="@layout/item_friend_simple"/>
+
+            <!-- Tarjeta de amigo 6 -->
+            <include layout="@layout/item_friend_simple"/>
+
+            <!-- Tarjeta de amigo 7 -->
+            <include layout="@layout/item_friend_simple"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Barra de Navegación Inferior -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

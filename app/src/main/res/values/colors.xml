@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="cardBackground">#FFCCBC</color>
+    <color name="primaryTextColor">#37474F</color>
+    <color name="buttonColor">#FF5722</color>
+    <!-- colors.xml -->
+    <color name="buttonBackgroundColor">#673AB7</color> <!-- Ejemplo de púrpura -->
+    <color name="buttonTextColor">#FFFFFF</color> <!-- Blanco -->
+
+</resources>
